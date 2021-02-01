@@ -1,7 +1,7 @@
 {
   "name": "laravel-query-api-frontend",
   "version": "1.0.0",
-  "description": "Package for writing beautiful eloquent style queries in frontend",
+  "description": "The package for writing beautiful eloquent style queries in frontend",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/{repo}"
+    "url": "git+https://github.com/shirokovnv/laravel-query-api-frontend"
   },
   "keywords": [
     "laravel",
@@ -28,7 +28,7 @@
   "author": "Nickolai Shirokov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/{repo}/issues"
+    "url": "https://github.com/shirokovnv/laravel-query-api-frontend/issues"
   },
   "eslintIgnore": ["*.test.ts", "*.spec.ts"],
   "homepage": "",
