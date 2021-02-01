@@ -30,6 +30,7 @@
   "bugs": {
     "url": "https://github.com/{repo}/issues"
   },
+  "eslintIgnore": ["*.test.ts", "*.spec.ts"],
   "homepage": "",
   "files": [
     "lib/**/*"

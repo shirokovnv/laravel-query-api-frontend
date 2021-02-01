@@ -57,8 +57,8 @@ export abstract class Query implements Renderable {
 
   public static makeUUID(): string {
     return (
-      Math.random().toString(Query.uuidLength).substring(Query.uuidOffset) +
-      new Date().getTime().toString(Query.uuidLength)
+      Math.random().toString(Query.uuidLength).substring(Query.uuidOffset)
+      + new Date().getTime().toString(Query.uuidLength)
     );
   }
 
