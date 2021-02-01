@@ -2,4 +2,6 @@
 
 Package for writing beautiful eloquent style queries in frontend
 
+Documentation in progress...
+
 ## License: MIT(MIT)
