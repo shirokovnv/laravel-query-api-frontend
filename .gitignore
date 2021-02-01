@@ -1,0 +1,14 @@
+**/.DS_Store
+
+/lib
+
+.nyc_output/
+
+coverage/
+
+node_modules/
+
+.idea/
+.vscode/
+
+.editorconfig
