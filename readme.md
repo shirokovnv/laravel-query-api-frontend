@@ -6,6 +6,14 @@ For backend usage see [this package](https://github.com/shirokovnv/laravel-query
 
 > The package is in beta-testing right now.
 
+## Installation
+
+Via npm: 
+
+```bash
+npm i laravel-query-api-frontend
+```
+
 ## Usage
 
 1. Import query builder:
