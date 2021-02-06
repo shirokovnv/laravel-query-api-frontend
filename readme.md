@@ -89,7 +89,7 @@ This will return something like this:
 
 ```json
 query_data: [
-    ...jsonQueryData
+    jsonQueryData
 ]
 ```
 
@@ -119,4 +119,31 @@ or all of them:
 import { queries } from 'laravel-query-api-backend'
 ```
 
-## License: MIT(MIT)
+Enjoy!
+
+## Change log
+
+Please see the [changelog](changelog.md) for more information on what has changed recently.
+
+## Testing
+
+```bash
+npm run test
+```
+
+## Contributing
+
+Please see [contributing.md](contributing.md) for details and a todolist.
+
+## Security
+
+If you discover any security related issues, please email shirokovnv@gmail.com instead of using the issue tracker.
+
+## Credits
+
+- [Nickolai Shirokov][link-author]
+- [All Contributors][link-contributors]
+
+## License
+
+MIT. Please see the [license file](license.md) for more information.
