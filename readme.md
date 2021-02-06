@@ -131,10 +131,6 @@ Please see the [changelog](changelog.md) for more information on what has change
 npm run test
 ```
 
-## Contributing
-
-Please see [contributing.md](contributing.md) for details and a todolist.
-
 ## Security
 
 If you discover any security related issues, please email shirokovnv@gmail.com instead of using the issue tracker.
