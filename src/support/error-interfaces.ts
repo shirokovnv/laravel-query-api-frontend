@@ -5,8 +5,8 @@ export interface QueryErrorInterface {
     file?: string;
     line?: number;
     message: string;
-    errors?: any;
-    trace?: any;
+    errors?: Array<any>;
+    trace?: Array<any>;
   };
 }
 

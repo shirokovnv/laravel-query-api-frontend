@@ -1,4 +1,5 @@
 import { BackendResult } from './backend-result';
+import { QueryTraceInterface } from './support';
 import { QueryDataInterface, QueryDataRowInterface } from './support/data-interfaces';
 import { QueryErrorsInterface, QueryErrorInterface } from './support/error-interfaces';
 
@@ -27,6 +28,10 @@ export class QueryResult {
 
   getErrors(): QueryErrorsInterface {
     return this.result.errors;
+  }
+
+  getTraces(): QueryTraceInterface {
+    return this.result.trace;
   }
 
   setResult(result: BackendResult): void {
