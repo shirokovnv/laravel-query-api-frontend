@@ -19,7 +19,7 @@ import { QueryBuilder } from 'laravel-query-api-frontend'
 ```js
 const builder = new QueryBuilder();
 
-const query = builder.fetch('App\Post', 'post')
+const query = builder.fetch('App\\Post', 'post')
     .where(['id', '>', '10'])
     .whereHas('author', function(query) {
         return query.where('name', 'LIKE', '%John%');
