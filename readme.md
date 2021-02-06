@@ -127,6 +127,32 @@ or all of them:
 import { queries } from 'laravel-query-api-backend'
 ```
 
+Supportable list of fetch conditions:
+
+> where
+
+> whereHas (orWhereHas)
+
+> whereDoesntHave (orWhereDoesntHave)
+
+> whereIn (whereNotIn)
+
+> whereNull (orWhereNull)
+
+> whereNotNull (orWhereNotNull)
+
+> whereColumn
+
+> whereExists
+
+> limit 
+
+> offset
+
+> scope 
+
+> with
+
 Enjoy!
 
 ## Change log
