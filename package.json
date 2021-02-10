@@ -1,6 +1,6 @@
 {
   "name": "laravel-query-api-frontend",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The package for writing beautiful eloquent style queries in frontend",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
