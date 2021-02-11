@@ -92,9 +92,7 @@ This will return something like this:
 4. Send http request to your backend with jsonQueryData
 
 ```js
-import { QueryBuilder } from 'laravel-query-api-frontend';
-import { QueryRunner } from 'laravel-query-api-frontend';
-import { QueryResult } from 'laravel-query-api-frontend';
+import { QueryBuilder, QueryRunner, QueryResult } from 'laravel-query-api-frontend';
 
 /**
  * for "http" you can use axios instance
