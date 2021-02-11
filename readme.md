@@ -28,11 +28,11 @@ import { QueryBuilder } from 'laravel-query-api-frontend'
 const builder = new QueryBuilder();
 
 const query = builder.fetch('App\\Post', 'post')
-    .where(['id', '>', '10'])
-    .whereHas('author', function(query) {
-        return query.where('name', 'LIKE', '%John%');
-    })
-    .paginate(1, 10);
+  .where(['id', '>', '10'])
+  .whereHas('author', function(query) {
+    return query.where('name', 'LIKE', '%John%');
+  })
+  .paginate(1, 10);
 ```
 
 This query assumes to select all posts with ID > 10, where author name contains "John", 
@@ -93,12 +93,29 @@ This will return something like this:
 
 4. Send http request to your backend with jsonQueryData
 
-> Note, that for example backend you need to wrap data in array, like this: 
+```js
+import { QueryBuilder } from 'laravel-query-api-frontend';
+import { QueryRunner } from 'laravel-query-api-frontend';
+import { QueryResult } from 'laravel-query-api-frontend';
 
-```json
-query_data: [
-    jsonQueryData
-]
+/**
+ * for "http" you can use axios instance
+ * apiURL - your query backend endpoint 
+ */
+const runner = new QueryRunner(http, apiURL);
+const commentsQuery = QueryBuilder.fetch('App\\Comments', 'comments')
+  .where(['popular', '=', true])
+  .paginate(1, 10);
+
+runner.addQuery(commentsQuery);
+runner.runTransaction().then((result: QueryResult) => {
+  let comments = result.getContent('comments');
+  // do some stuff with received data 
+
+})
+.catch((error: any) => {
+  // handle error
+});
 ```
 
 ### Available queries: 
