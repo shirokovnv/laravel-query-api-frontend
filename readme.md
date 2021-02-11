@@ -132,13 +132,7 @@ runner.runTransaction().then((result: QueryResult) => {
 
 > update
 
-You can import one query class like this: 
-
-```js
-import { queries.Create as Create } from 'laravel-query-api-backend'
-```
-
-or all of them: 
+You can import query classes like this:
 
 ```js
 import { queries } from 'laravel-query-api-backend'
