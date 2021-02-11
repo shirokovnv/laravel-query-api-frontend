@@ -25,9 +25,7 @@ import { QueryBuilder } from 'laravel-query-api-frontend'
 2. Write a query in laravel eloquent builder style, for ex.: 
 
 ```js
-const builder = new QueryBuilder();
-
-const query = builder.fetch('App\\Post', 'post')
+const query = QueryBuilder.fetch('App\\Post', 'post')
   .where(['id', '>', '10'])
   .whereHas('author', function(query) {
     return query.where('name', 'LIKE', '%John%');
