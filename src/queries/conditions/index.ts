@@ -1,3 +1,4 @@
+export { SelectCondition } from './select-condition';
 export { WhereCondition } from './where-condition';
 export { WhereHasCondition } from './where-has-condition';
 export { OrWhereHasCondition } from './or-where-has-condition';

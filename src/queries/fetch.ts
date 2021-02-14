@@ -16,6 +16,11 @@ export class Fetch extends Query {
     this.setKey(key);
   }
 
+  select(columns: Array<string>): Fetch {
+    this.conditionChain.push(new conditions.SelectCondition(columns));
+    return this;
+  }
+
   orWhere(condition: any): Fetch {
     this.conditionChain.push(new conditions.OrWhereCondition(condition));
     return this;

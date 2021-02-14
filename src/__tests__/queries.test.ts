@@ -100,3 +100,25 @@ test('Fetch query with where conditions renders valid JSON', () => {
   };
   expect(queryFetch.render()).toEqual(expectedValue);
 });
+
+test('Fetch query with select conditions renders valid JSON', () => {
+  const queryFetch = QueryBuilder.fetch('Comment', 'comment')
+    .select(['id', 'title'])
+  const expectedValue = {
+    key: 'comment',
+    params: {
+      parts: [{
+        args: {
+          columns: [
+            'id',
+            'title'
+          ]
+        },
+        kind: 'select'
+      }]
+    },
+    query: 'fetch',
+    type: 'Comment'
+  };
+  expect(queryFetch.render()).toEqual(expectedValue);
+});
