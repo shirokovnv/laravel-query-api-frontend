@@ -4,8 +4,6 @@ The package for writing beautiful eloquent style queries in frontend
 
 For backend usage see [this package](https://github.com/shirokovnv/laravel-query-api-backend)
 
-> The package is in beta-testing right now.
-
 ## Installation
 
 Via npm: 

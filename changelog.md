@@ -2,6 +2,10 @@
 
 All notable changes to `LaravelQueryApiFrontend` will be documented in this file.
 
+## Version 0.1.0
+
+- First minor version release
+
 ## Version 0.0.4
 
 ### Added
